@@ -1,0 +1,613 @@
+{
+	"info": {
+		"_postman_id": "5b9d987e-89a3-4ed7-a35a-134c71182db4",
+		"name": "ChallengeFinal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37035520"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Registro de usuário",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/auth/register",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login de usuário",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/auth/login",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca usuário atual",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/auth/me",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza perfil",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/auth/profile",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movies",
+			"item": [
+				{
+					"name": "Busca todos os filmes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/movies",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cria um novo filme",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/movies",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca filma pelo id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/movies/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"movies",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza filme",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/movies/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"movies",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta filme",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/movies/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"movies",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservations",
+			"item": [
+				{
+					"name": "Busca todas reservas do usuário atual",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/reservations/me",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"reservations",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cria nova reserva",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/reservations",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca todas reservas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/reservations",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca reserva pelo id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/reservations/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"reservations",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza o status da reserva",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/reservations/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"reservations",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta reserva",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/reservations/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"reservations",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sessions",
+			"item": [
+				{
+					"name": "Busca todas sessões de filme",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/sessions",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cria nova sessão",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/sessions",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza sessão",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/sessions/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"sessions",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta sessão",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/sessions/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"sessions",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Redefine assentos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/sessions/{id}/reset-seats",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"sessions",
+								"{id}",
+								"reset-seats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca sessão por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/sessions/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"sessions",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Theaters",
+			"item": [
+				{
+					"name": "Busca todos teatros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/theaters",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"theaters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cria um novo teatro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/theaters",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"theaters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca teatro pelo id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/theaters/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"theaters",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza teatro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/theaters/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"theaters",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta teatro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/theaters/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"theaters",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Busca todos usuários",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/users",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca usuário por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/users/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"users",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza usuário",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/users/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"users",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta usuário",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/users/{id}",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"users",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Setup",
+			"item": [
+				{
+					"name": "Cria usuário admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/setup/admin",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"setup",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cria usuário padrão de teste",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/setup/test-users",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"setup",
+								"test-users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
